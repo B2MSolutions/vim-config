@@ -5,7 +5,7 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
-colorscheme molokai
+colorscheme codeschool
 map <c-f> :call JsBeautify()<cr>
 
 set nocompatible               " Be iMproved
