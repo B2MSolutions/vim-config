@@ -1,5 +1,6 @@
 js-beautify
 neobundle.vim
+vim-javascript-syntax
 vim-jsbeautify
 vim-multiple-cursors
 vimproc

@@ -5,7 +5,12 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
-colorscheme codeschool
+
+let g:molokai_original = 1
+let g:rehash256 = 1
+colorscheme molokai
+set background=dark
+
 map <c-f> :call JsBeautify()<cr>
 
 set nocompatible               " Be iMproved
@@ -30,6 +35,7 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'einars/js-beautify'
+NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 
 filetype plugin indent on     " Required!
 "
