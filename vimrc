@@ -6,10 +6,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-let g:molokai_original = 1
-let g:rehash256 = 1
-colorscheme molokai
 set background=dark
+"let g:solarized_termcolors=256
+colorscheme codeschool
 
 map <c-f> :call JsBeautify()<cr>
 
@@ -36,6 +35,7 @@ NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'einars/js-beautify'
 NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
+NeoBundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on     " Required!
 "
