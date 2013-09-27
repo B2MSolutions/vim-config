@@ -8,7 +8,7 @@ set expandtab
 
 set background=dark
 "let g:solarized_termcolors=256
-colorscheme codeschool
+colorscheme jellybeans
 
 map <c-f> :call JsBeautify()<cr>
 
