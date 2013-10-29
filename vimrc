@@ -7,6 +7,9 @@ set shiftwidth=2
 set expandtab
 set foldmethod=indent
 
+filetype on
+au BufNewFile,BufRead *.pp set filetype=puppet
+
 if &term =~ '256color'
     " Disable Background Color Erase (BCE) so that color schemes
     "   " work properly when Vim is used inside tmux and GNU screen.
