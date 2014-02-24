@@ -46,6 +46,7 @@ NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'einars/js-beautify'
 NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'kien/ctrlp.vim'
 
 filetype plugin indent on     " Required!
 "
