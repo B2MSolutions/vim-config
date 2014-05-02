@@ -5,10 +5,15 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set foldmethod=indent
+set foldmethod=manual
 
 filetype on
 au BufNewFile,BufRead *.pp set filetype=puppet
+au BufNewFile,BufRead *.ejs set filetype=html
+au BufRead,BufNewFile *.json set filetype=json
+autocmd BufRead,BufNewFile *.markdown setlocal spell spelllang=en_gb
+
+let g:syntastic_html_tidy_ignore_errors= ["proprietary attribute \"ui-", "proprietary attribute \"ng-", "<form> proprietary attribute \"novalidate\"", "<form> lacks \"action\" attribute", "trimming empty <span>", "<input> proprietary attribute \"autofocus\"", "unescaped & which should be written as &amp;", "inserting implicit <span>", "<input> proprietary attribute \"required\"", "trimming empty <select>", "trimming empty <button>", "<img> lacks \"src\" attribute", "plain text isn't allowed in <head> elements", "<html> proprietary attribute \"app\"", "<link> escaping malformed URI reference", "</head> isn't allowed in <body> elements", "<script> escaping malformed URI reference", "discarding unexpected <body>", "'<' + '/' + letter not allowed here", "missing </script>", "proprietary attribute \"autocomplete\"", "trimming empty <i>", "proprietary attribute \"required\"", "proprietary attribute \"placeholder\"", "<ng-include> is not recognized!", "discarding unexpected <ng-include>", "missing </button>", "replacing unexpected button by </button>", "<ey-confirm> is not recognized!", "discarding unexpected <ey-confirm>", "discarding unexpected </ey-confirm>", "discarding unexpected </ng-include>"]
 
 if &term =~ '256color'
     " Disable Background Color Erase (BCE) so that color schemes
@@ -48,6 +53,7 @@ NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascr
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'syntastic'
 
 filetype plugin indent on     " Required!
 "
