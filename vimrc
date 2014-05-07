@@ -54,6 +54,8 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'syntastic'
+NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'marijnh/tern_for_vim'
 
 filetype plugin indent on     " Required!
 "
