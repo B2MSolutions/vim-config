@@ -57,6 +57,13 @@ NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'syntastic'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'marijnh/tern_for_vim'
+NeoBundle "MarcWeber/vim-addon-mw-utils"
+NeoBundle "tomtom/tlib_vim"
+NeoBundle "garbas/vim-snipmate"
+NeoBundle "honza/vim-snippets"
+NeoBundle 'tpope/vim-surround.git'
+NeoBundle 'sickill/vim-pasta'
+NeoBundle 'Raimondi/delimitMate'
 
 filetype plugin indent on     " Required!
 "
@@ -68,11 +75,9 @@ filetype plugin indent on     " Required!
 " Installation check.
 NeoBundleCheck
 
-if has("autocmd")
-  au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
-  au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
-  au VimLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
-end
+:autocmd InsertEnter,InsertLeave * set cul!
 
 nmap <F8> o<Esc>
 nmap <F9> O<Esc>
+:imap jj <Esc>
+au BufNewFile,BufRead *.ejs set filetype=html
