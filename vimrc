@@ -57,13 +57,14 @@ NeoBundle 'scrooloose/nerdcommenter'
 "NeoBundle 'syntastic'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'marijnh/tern_for_vim'
-"NeoBundle "MarcWeber/vim-addon-mw-utils"
-"NeoBundle "tomtom/tlib_vim"
-"NeoBundle "garbas/vim-snipmate"
-"NeoBundle "honza/vim-snippets"
-"NeoBundle 'tpope/vim-surround.git'
-"NeoBundle 'sickill/vim-pasta'
-"NeoBundle 'Raimondi/delimitMate'
+NeoBundle "MarcWeber/vim-addon-mw-utils"
+NeoBundle "tomtom/tlib_vim"
+NeoBundle "garbas/vim-snipmate"
+NeoBundle "honza/vim-snippets"
+NeoBundle 'tpope/vim-surround.git'
+NeoBundle 'sickill/vim-pasta'
+NeoBundle 'Raimondi/delimitMate'
+NeoBundle 'mmozuras/snipmate-mocha'
 
 filetype plugin indent on     " Required!
 "
@@ -81,3 +82,6 @@ nmap <F8> o<Esc>
 nmap <F9> O<Esc>
 :imap jj <Esc>
 au BufNewFile,BufRead *.ejs set filetype=html
+
+imap <C-J> <esc>a<Plug>snipMateNextOrTrigger
+smap <C-J> <Plug>snipMateNextOrTrigger
