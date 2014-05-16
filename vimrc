@@ -54,7 +54,7 @@ NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascr
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'syntastic'
+"NeoBundle 'syntastic'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'marijnh/tern_for_vim'
 "NeoBundle "MarcWeber/vim-addon-mw-utils"
