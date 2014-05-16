@@ -57,13 +57,13 @@ NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'syntastic'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'marijnh/tern_for_vim'
-NeoBundle "MarcWeber/vim-addon-mw-utils"
-NeoBundle "tomtom/tlib_vim"
-NeoBundle "garbas/vim-snipmate"
-NeoBundle "honza/vim-snippets"
-NeoBundle 'tpope/vim-surround.git'
-NeoBundle 'sickill/vim-pasta'
-NeoBundle 'Raimondi/delimitMate'
+"NeoBundle "MarcWeber/vim-addon-mw-utils"
+"NeoBundle "tomtom/tlib_vim"
+"NeoBundle "garbas/vim-snipmate"
+"NeoBundle "honza/vim-snippets"
+"NeoBundle 'tpope/vim-surround.git'
+"NeoBundle 'sickill/vim-pasta'
+"NeoBundle 'Raimondi/delimitMate'
 
 filetype plugin indent on     " Required!
 "
