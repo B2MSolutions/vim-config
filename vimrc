@@ -65,6 +65,7 @@ NeoBundle 'tpope/vim-surround.git'
 NeoBundle 'sickill/vim-pasta'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'mmozuras/snipmate-mocha'
+NeoBundle 'Lokaltog/vim-easymotion'
 
 filetype plugin indent on     " Required!
 "
