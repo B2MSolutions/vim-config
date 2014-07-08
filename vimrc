@@ -66,6 +66,7 @@ NeoBundle 'sickill/vim-pasta'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'mmozuras/snipmate-mocha'
 NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'elzr/vim-json'
 
 filetype plugin indent on     " Required!
 "
@@ -86,3 +87,7 @@ au BufNewFile,BufRead *.ejs set filetype=html
 
 imap <C-J> <esc>a<Plug>snipMateNextOrTrigger
 smap <C-J> <Plug>snipMateNextOrTrigger
+set completeopt-=preview
+
+:set ignorecase
+:set smartcase
