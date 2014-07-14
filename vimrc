@@ -67,6 +67,7 @@ NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'mmozuras/snipmate-mocha'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'elzr/vim-json'
+NeoBundle 'MattesGroeger/vim-bookmarks'
 
 filetype plugin indent on     " Required!
 "
