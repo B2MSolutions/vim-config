@@ -34,7 +34,7 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -68,6 +68,7 @@ NeoBundle 'mmozuras/snipmate-mocha'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'MattesGroeger/vim-bookmarks'
+call neobundle#end()
 
 filetype plugin indent on     " Required!
 "
